@@ -10,6 +10,9 @@ module.exports = {
         library: 'testFirst',
         libraryTarget: 'umd'
     },
+    externals: [
+        '@polymer/polymer'
+    ],
     module: {
         rules: [
             {
