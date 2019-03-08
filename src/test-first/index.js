@@ -1,8 +1,8 @@
-import { PolymerElement, html } from '@polymer/polymer';
+import {PolymerElement, html} from '@polymer/polymer';
 
-class CustomElement extends PolymerElement {
+class TestElement extends PolymerElement {
     static get is() {
-        return 'custom-element';
+        return 'test-first';
     }
 
     static get template() {
@@ -14,4 +14,4 @@ class CustomElement extends PolymerElement {
     }
 }
 
-customElements.define(CustomElement.is, CustomElement);
+customElements.define(TestElement.is, TestElement);
