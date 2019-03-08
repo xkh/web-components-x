@@ -1,0 +1,33 @@
+{
+  "name": "web-components-x",
+  "version": "0.0.1",
+  "description": "web-components-demo",
+  "main": "dist/test-first.js",
+  "scripts": {
+    "dev": "rm -rf ./dist && webpack --mode development --config webpack.config.js",
+    "build": "rm -rf ./dist && webpack --mode production --config webpack.config.js",
+    "deploy": "git add . && git commit -m deploy && git push origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xkh/web-components-x.git"
+  },
+  "keywords": [
+    "web-component"
+  ],
+  "author": "xkh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xkh/web-components-x/issues"
+  },
+  "homepage": "https://github.com/xkh/web-components-x#readme",
+  "dependencies": {
+    "@polymer/polymer": "^3.1.0"
+  },
+  "devDependencies": {
+    "@polymer/polymer": "^3.1.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
