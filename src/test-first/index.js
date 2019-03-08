@@ -8,7 +8,7 @@ class TestElement extends PolymerElement {
     static get template() {
         return html`
       <style>:host { color: red; }</style>
-      <div>àaáaâaä</div>
+      <div>àaáaâaä1</div>
       <slot></slot>
     `;
     }

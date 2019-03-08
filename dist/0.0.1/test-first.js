@@ -132,6 +132,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 */
 class Yt{constructor(t){this.value=t.toString()}toString(){return this.value}}function $t(t){if(t instanceof Yt)return t.value;throw new Error(`non-literal value passed to Polymer's htmlLiteral function: ${t}`)}const Jt=function(t,...e){const r=document.createElement("template");return r.innerHTML=e.reduce((e,r,i)=>e+function(t){if(t instanceof HTMLTemplateElement)return t.innerHTML;if(t instanceof Yt)return $t(t);throw new Error(`non-template value passed to Polymer's html function: ${t}`)}(r)+t[i+1],t[0]),r},Ut=Dt(HTMLElement);class Vt extends Ut{static get is(){return"test-first"}static get template(){return Jt`
       <style>:host { color: red; }</style>
-      <div>àaáaâaä</div>
+      <div>àaáaâaä1</div>
       <slot></slot>
     `}}customElements.define(Vt.is,Vt)}])});
